@@ -22,8 +22,8 @@ const Login = () => {
   };
 
   return (
-    <div className="container mt-5">
-      <h1>🔑 User Login</h1>
+    <div className="container mt-2">
+      <h3>🔑 User Login</h3>
       
       {/* Error Message */}
       {error && <div className="alert alert-danger">{error}</div>}
@@ -56,6 +56,7 @@ const Login = () => {
 
       {/* Back to Home Button */}
       <Link to="/" className="btn btn-secondary mt-3">🏠 Back to Home</Link>
+      <p>Don't have an account? <a href="/register">Sign up</a></p>
     </div>
   );
 };
